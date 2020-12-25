@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<catalog name="Box Office Music">
+	<album>
+		<title>Moving Pictures</title>
+		<artist>Rush</artist>
+		<year>1981</year>
+		<tracks>
+			<track length="4:33">Tom Sawyer</track>
+			<track length="6:06">Red Barchetta</track>
+			<track length="4:24">YYZ</track>
+			<track length="4:19">Limelight</track>
+			<track length="10:56">The Camera Eye</track>
+			<track length="4:43">Witch Hunt</track>
+			<track length="4:43">Vital Signs</track>
+		</tracks>
+	</album>
+	<album>
+		<title>Georgia Wonder 2006</title>
+		<artist>Georgia Wonder</artist>
+		<year>2006</year>
+		<tracks>
+			<track length="5:18">Genius</track>
+			<track length="6:26">Two Weeks To Live</track>
+			<track length="3:40">Falling Down</track>
+			<track length="6:36">Hello Stranger</track>
+			<track length="4:06">Carnival</track>
+		</tracks>
+	</album>
+	<single>
+		<title>Some Single</title>
+	</single>
+</catalog>

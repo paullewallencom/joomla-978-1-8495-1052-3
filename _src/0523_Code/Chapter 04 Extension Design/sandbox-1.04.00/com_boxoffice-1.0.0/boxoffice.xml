@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+
+	<name>Boxoffice</name>
+	<author>Box Office Software</author>
+	<copyright>Copyright (C) 2009 </copyright>
+	<creationDate>November 14, 2009</creationDate>
+	<license>GNU/GPL</license>
+	<authorEmail>support@packtpub.com</authorEmail>
+	<authorUrl>www.packtpub.com</authorUrl>
+	<version>1.04.00</version>
+	<description>This component provides a easy means of creating and managing movie reviews and comments.</description>
+	
+	<!-- Install/Uninstall Section -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+	
+	<!-- Administration File Section -->
+	<administration>
+		<menu>Box Office Revues</menu>
+		
+		<files folder="admin">
+			<filename>index.html</filename>
+			<filename>install.php</filename>
+			<filename>uninstall.php</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			
+			<filename>assets/index.html</filename>
+			<filename>classes/index.html</filename>
+			<filename>controllers/index.html</filename>
+			<filename>elements/index.html</filename>
+			<filename>help/index.html</filename>
+			<filename>helpers/index.html</filename>
+			<filename>models/index.html</filename>
+			<filename>tables/index.html</filename>
+			
+			<filename>views/index.html</filename>
+			<filename>views/revue/index.html</filename>
+			<filename>views/revue/tmpl/index.html</filename>
+			<filename>views/revues/index.html</filename>
+			<filename>views/revues/tmpl/index.html</filename>
+		</files>
+	</administration>
+	
+	<!-- Site File Section -->
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>assets/index.html</filename>
+		<filename>classes/index.html</filename>
+		<filename>controllers/index.html</filename>
+		<filename>helpers/index.html</filename>
+		<filename>models/index.html</filename>
+		<filename>views/index.html</filename>
+		<filename>views/revue/index.html</filename>
+		<filename>views/revue/tmpl/index.html</filename>
+	</files>
+	
+</install>

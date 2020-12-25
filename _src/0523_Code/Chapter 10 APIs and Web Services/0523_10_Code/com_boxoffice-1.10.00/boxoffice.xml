@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0">
+
+	<name>Boxoffice</name>
+	<author>Box Office Software</author>
+	<copyright>Copyright (C) 2009-2010 </copyright>
+	<creationDate>January 5, 2010</creationDate>
+	<license>GNU/GPL</license>
+	<authorEmail>support@packtpub.com</authorEmail>
+	<authorUrl>www.packtpub.com</authorUrl>
+	<version>1.10.00</version>
+	<description>This component provides a easy means of creating and managing movie reviews and comments.</description>
+	
+	<!-- Install/Uninstall Section -->
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<installfile>install.php</installfile>
+	<uninstallfile>uninstall.php</uninstallfile>
+	
+	<!-- Administration File Section -->
+	<administration>
+	
+		<menu>Box Office Revues</menu>
+		<submenu>
+			<menu link="option=com_boxoffice">Revues</menu>
+			<menu link="option=com_categories&amp;section=com_boxoffice">Categories</menu>
+		</submenu>
+		
+		<files folder="admin">
+		
+			<filename>help/index.html</filename>
+			<filename>help/en-GB/help.html</filename>
+			
+			<filename>models/revue.php</filename>
+			<filename>models/revues.php</filename>
+			<filename>models/index.html</filename>
+			
+			<filename>tables/revue.php</filename>
+			<filename>tables/index.html</filename>
+			
+			<filename>views/revue/view.html.php</filename>
+			<filename>views/revue/index.html</filename>
+			<filename>views/revue/tmpl/default.php</filename>
+			<filename>views/revue/tmpl/default_details.php</filename>
+			<filename>views/revue/tmpl/default_revue.php</filename>
+			<filename>views/revue/tmpl/index.html</filename>
+			
+			<filename>views/revues/view.html.php</filename>
+			<filename>views/revues/index.html</filename>
+			<filename>views/revues/tmpl/default.php</filename>
+			<filename>views/revues/tmpl/index.html</filename>
+			
+			<filename>admin.boxoffice.php</filename>
+			<filename>config.xml</filename>
+			<filename>controller.php</filename>
+			<filename>install.sql</filename>
+			<filename>uninstall.sql</filename>
+			<filename>install.php</filename>
+			<filename>uninstall.php</filename>
+			<filename>index.html</filename>
+			
+		</files>
+		
+		<languages>
+			<language tag="en-GB">admin/languages/en-GB.com_boxoffice.ini</language>
+		</languages>
+					
+	</administration>
+	
+	<!-- Site File Section -->
+	<files folder="site">
+	
+		<filename>assets/albums.xml</filename>
+		
+		<filename>models/revue.php</filename>
+		<filename>models/index.html</filename>
+		
+		<filename>views/revue/metadata.xml</filename>
+		<filename>views/revue/view.feed.php</filename>
+		<filename>views/revue/view.html.php</filename>
+		<filename>views/revue/view.raw.php</filename>
+		<filename>views/revue/view.xml.php</filename>
+		<filename>views/revue/index.html</filename>
+		<filename>views/revue/tmpl/default.php</filename>
+		<filename>views/revue/tmpl/default.xml</filename>
+		<filename>views/revue/tmpl/list.php</filename>
+		<filename>views/revue/tmpl/list.xml</filename>
+		<filename>views/revue/tmpl/raw.php</filename>
+		<filename>views/revue/tmpl/xml.php</filename>
+		<filename>views/revue/tmpl/xmlstring.php</filename>
+		<filename>views/revue/tmpl/yahoo.php</filename>
+		<filename>views/revue/tmpl/index.html</filename>
+		<filename>views/index.html</filename>
+		
+		<filename>boxoffice.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		
+	</files>
+
+</install>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<params> 
+		<param name="title" 
+		       type="text" 
+					 default="Box Office Revues"
+		       label="Title" 
+					 description="Title of page" size="30" />
+		<param name="description" 
+					 type="textarea" 
+					 default=""
+					 label="Description" rows="5" cols="50" 
+					 description="Description to display at the top of the page." />
+	</params>
+</config>

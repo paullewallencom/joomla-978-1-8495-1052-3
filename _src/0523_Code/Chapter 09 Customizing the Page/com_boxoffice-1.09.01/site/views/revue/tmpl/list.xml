@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Revue List">
+		<message>
+			<![CDATA[Summary list of revues.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Revue List</name>
+		<description>Summary list of revues.</description>
+		<url>
+			<param type="sql" name="id" label="Revue:"
+			       description="Revue to display"
+						 query="SELECT id AS value, title AS id FROM #__boxoffice_revues" />
+		</url>
+		<params>
+			<param type="radio" name="show_heading" label="Show Heading"
+						 description="Display heading above revues." default="0">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param> 
+			<param type="text" name="revue_heading" label="Revue Heading"
+						 description="Heading to display above the revues." 
+						 default="Box Office Revues" />
+		</params>
+		<advanced>
+			<param type="radio" name="list_by_cat" label="List by Genre"
+						 description="List revues by genre." default="0">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+		</advanced>
+	</state>
+</metadata>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install type="module" version="1.5.0" client="site">
+	<name>Critics Choice</name>
+	<author>Box Office Software</author>
+	<authorEmail>support@packtpub.com</authorEmail>
+	<authorUrl>www.packtpub.com</authorUrl>
+	<copyright>Copyright (C) 2009 </copyright>
+	<creationDate>November 14, 2009</creationDate>
+	<description>This module provides a list of the most recent reviews.</description>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	
+	<files>
+		<filename module="mod_criticschoice">mod_criticschoice.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>tmpl/_error.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/ratings.php</filename>
+		<filename>tmpl/index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.mod_criticschoice.ini</language>
+	</languages>
+	
+	<params>
+		<param name="count" type="text" default="5" label="Count" description="The number of items to display (default 5)" />
+		<param name="show_rating" type="radio" default="0" label="Show Rating" description="Show movie rating">
+			<option value="1">show</option>
+			<option value="0">hide</option>
+		</param>
+		<param name="layout" type="filelist" label="Layout" description="Style with which to display the module"
+		       directory="/modules/mod_criticschoice/tmpl" default="" hide_default="1" hide_none="1"
+					 stripext="1" filter="\.php$" exclude="^_" />
+	</params>
+	
+	<params group="advanced">
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

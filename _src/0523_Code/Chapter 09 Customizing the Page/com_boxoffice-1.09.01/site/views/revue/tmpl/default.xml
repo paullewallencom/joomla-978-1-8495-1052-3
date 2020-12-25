@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Individual Revue">
+		<message>
+			<![CDATA[Individual Movie Revue]]>
+		</message>
+	</layout>
+	<state>
+		<name>Individual Revue</name>
+		<description>Individual Movie Revue</description>
+		<params>
+			<param type="radio" name="show_heading" label="Show Heading"
+						 description="Display heading above revue." default="0">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+			</param> 
+			<param type="text" name="revue_heading" label="Revue Heading"
+						 description="Heading to display above the revue." 
+						 default="Box Office Revue" />
+		</params>
+	</state>
+</metadata>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5.0" type="plugin" group="boxoffice">
+	<name>Revue</name>
+	<author>Box Office Software</author>
+	<authorEmail>support@packtpub.com</authorEmail>
+	<authorUrl>www.packtpub.com</authorUrl>
+	<copyright>Copyright (C) 2009 </copyright>
+	<creationDate>November 14, 2009</creationDate>
+	<description>This plugin changes the * into images</description>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	
+	<files>
+		<filename plugin="revue">revue.php</filename>
+	</files>
+	
+	<params />
+
+</install>

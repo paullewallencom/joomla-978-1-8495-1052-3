@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="AJAX Raw Layout">
+		<message>
+			<![CDATA[Choose a revue]]>
+		</message>
+	</layout>
+	<state>
+	</state>
+</metadata>
